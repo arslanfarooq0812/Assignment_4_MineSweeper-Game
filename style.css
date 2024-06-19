@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameBoard {
+    display: grid;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #726c6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell.revealed {
+    background-color: #d39d9d;
+    cursor: default;
+}
+
+.cell.bomb img {
+    width: 20px;
+    height: 20px;
+}
+
+#status {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bomb.png" type="image/x-icon">
+</head>
+<body>
+    <h1>MineSweeper <i>  by M Arslan Farooq </i> </h1>
+    
+    <div id="difficulty">
+        <button onclick="initGame('easy')">Easy</button>
+        <button onclick="initGame('regular')">Regular</button>
+        <button onclick="initGame('hard')">Hard</button>
+    </div>
+    <div id="gameBoard"></div>
+    <div id="status">
+        <span id="bombCount"></span>
+        <span id="gameStatus"></span>
+        <button onclick="initGame(currentDifficulty)">Play again?</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
